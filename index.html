@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header">
+        <h3>Morse code translation</h3>
+    </header>
+
+    <main class="content">
+
+        <div class="form-wrapper">
+            <h3>Your normal text:</h3>
+            <form action="POST" class="translation-form">
+                <textarea class="translation-area" id="input-text" placeholder="Type here..."></textarea>
+                <button type="button" class="translation-button" id="translation-button">Translate!</button>  
+            </form>
+        </div>
+        
+        <div class="form-wrapper">
+            <h3>Morse code translation:</h3>
+            <form action="GET" class="translation-form">
+                <textarea class="translation-area" id="output-text" readonly placeholder="Morse code..."></textarea>
+                <div class="multiple-buttons">
+                    <button type="button" class="translation-button" id="copy-button">Copy text</button>  
+                    <button type="button" class="translation-button" id="play-sound-button">Play sound</button>  
+                </div>
+            </form>
+        </div>
+  
+    </main>
+
+    <script src="morsecode.js"></script>
+    <script src="index.js"></script>
+
+    <footer class="footer"> 
+        <p>To be filled</p>
+    </footer>
+</body>
+
+</html>
